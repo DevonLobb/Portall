@@ -246,6 +246,10 @@ h1 {
     margin: 0;
 }
 
+.port-protocol-link {
+   text-decoration: none;
+}
+
 .port-tooltip {
     visibility: hidden;
     width: 200px;

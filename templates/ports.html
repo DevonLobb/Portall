@@ -28,7 +28,12 @@
                 <span class="port-description">{{ port.description }}</span>
                 <div class="port-tooltip">{{ port.description }}</div>
             </div>
-            <p class="port-protocol">{{ port.port_protocol }}</p>
+            <div class="port-protocol">
+                <span>{{ port.port_protocol }}</span>
+                <a class="port-protocol-link" href="http://{{ ip }}:{{ port.port_number }}" target="_blank" role="button">
+                   <i class="fa-solid fa-link"></i>
+                </a>
+           </div>
         </div>
         {% endfor %}
         <div class="port-slot add-port-slot">

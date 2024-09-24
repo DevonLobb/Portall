@@ -44,6 +44,7 @@ export function init() {
  */
 function handleMouseDown(e) {
     if (e.which !== 1) return; // Only respond to left mouse button
+    if (e.target.className == "fa-solid fa-link") return; // Ignore handler if the URL button is clicked
 
     const panel = $(this).closest('.switch-panel');
     const isLastPort = panel.find('.port-slot:not(.add-port-slot)').length === 1;
